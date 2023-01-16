@@ -119,7 +119,7 @@ describe('Business Critical API Scenario', () => {
     });
 
     // Bug: The expected http response for the Get request after deletion should've been 404
-    it('API: Positive test | Delete users by id', () => {
+    it('API: Positive test | Delete users by id and verify it does not exist anymore', () => {
         cy.getUserById(userId).then(resp => {
             cy.log(JSON.stringify(resp.body))
             expect(resp.status).to.eq(200)
@@ -130,10 +130,11 @@ describe('Business Critical API Scenario', () => {
             cy.deleteUser(data.id, name, job).then(resp => {
                 cy.log(JSON.stringify(resp.body))
                 expect(resp.status).to.eq(204)
-                // expect(resp.body).to.contain.property('name');
 
                 cy.getUserById(data.id).then(resp => {
-                    cy.log(JSON.stringify(resp.body))
+                    let data = resp.body.data
+                    cy.task('log', `${JSON.stringify(data)}`)
+                    expect(data).to.be.undefined
                     expect(resp.status).to.eq(404)
                 })
             })

@@ -1,5 +1,5 @@
 <h1 align="center">
-  Test automation for website exploratory testing and Get-request verification
+  Test automation for testing a shopping cart process and a CRUD API verification
 </h1>
 
 <p align="left" style="font-size: 1.2rem; color: orange;">

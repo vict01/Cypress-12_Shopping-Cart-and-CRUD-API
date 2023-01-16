@@ -1,0 +1,37 @@
+
+******************************* Test Cases > Frontend (Task 1) *******************************
+Test case id: 0001
+Suite: Frontend
+Description: Carry out complete checkout process using standard user
+Steps:
+   - Log in with a standard user
+   - Add a product to the shopping cart
+   - Go to the shopping cart
+   - Click on checkout
+   - Fill out personal INFORMATION to proceed
+   - Click on continue
+   - Verify information is correct
+   - Click on finish
+
+Expected result: The payment is made successfully, the user receives the message:
+                 "THANK YOU FOR YOUR ORDER, Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+
+Actual result: As Expected
+Priority: Hight
+Status: Passed
+   
+
+******************************* Test Cases > Backend (Task 2) *******************************
+Test case id: 0001
+Suite: Backend
+Description: Query an existing user by id
+Steps:
+   - Put the proper url and id in the method request
+   - Launch the request
+   - Verify the data retrieved
+
+Expected result: Following data should be retrieved: id, email, first name, last name, avatar
+
+Actual result: As Expected
+Priority: Hight
+Status: Passed

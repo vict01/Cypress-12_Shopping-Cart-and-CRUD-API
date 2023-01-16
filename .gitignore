@@ -1,0 +1,10 @@
+dist
+allure-results
+allure-report
+cypress.env.json
+cypress/downloads
+cypress/videos
+cypress/screenshots
+node_modules
+test cases and report
+**/package-lock.json

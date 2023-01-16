@@ -1,0 +1,19 @@
+                   
+******************************* Bugs report  *******************************
+
+Defect #1:  
+   - Module: Backend Get Method
+   - Id: 0001
+   - Description: By inquiring users by non-existing page we get 200 status code instead of 404
+
+   - Steps to reproduce:
+                        - Put the proper url and a non-existing id in the method request
+                        - Launch the request
+                        - Verify the data retrieved
+
+   - Expected result: The status code in response should be 404 not found
+   - Actual result: The status code in response should be other than 200, ideally 404
+   - Priority: low
+
+******************************* NOTES *******************************
+Other bugs were found, not documented here, but they can be seen by running the test and looking at the test report generated in HTML.

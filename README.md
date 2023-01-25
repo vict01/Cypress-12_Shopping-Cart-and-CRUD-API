@@ -2,7 +2,7 @@
   Test automation for testing a shopping cart process and a CRUD API verification
 </h1>
 
-<p align="left" style="font-size: 1.2rem; color: orange;">
+<p align="left" style="font-size: 1.2rem; color: orange; font-weight: bold;">
   This framework is made up of the following tools
 </p>
 
@@ -19,7 +19,7 @@
 </div>
 <hr />
 
-<p align="left" style="font-size: 1.2rem; color: orange;"> Framework Structure </p>
+<p align="left" style="font-size: 1.2rem; color: orange; font-weight: bold;"> Framework Structure </p>
 
 ##
 The relevant framework files are included in the following folders.
@@ -32,7 +32,7 @@ The relevant framework files are included in the following folders.
 > Note: video and allure folders are  generated after running the test.
 ##
 
-<p align="left" style="font-size: 1.2rem; color: orange;"> Requirements to run the test </p>
+<p align="left" style="font-size: 1.2rem; color: orange; font-weight: bold;"> Requirements to run the test </p>
 
 Open a terminal console and make sure you are in the root path of the project, and run the command below to install dependencies.
    - `npm i`
@@ -40,7 +40,7 @@ Open a terminal console and make sure you are in the root path of the project, a
    - Make sure you have at least java 8 installed, it's required to generate the Allure report.
    
 
-<p align="left" style="font-size: 1.2rem; color: orange;"> How to run the test </p>
+<p align="left" style="font-size: 1.2rem; color: orange; font-weight: bold;"> How to run the test </p>
 
 - To run all the tests in headed mode (opening the web browser), so that run one after the other, with no pause, run
    - `npm test`
